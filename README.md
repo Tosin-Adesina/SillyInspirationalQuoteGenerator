@@ -35,10 +35,10 @@ node main.js
 ```
 A nugget of advice straight from heavens will subsequently be printed to the command line
 ## Project Status
-completed
+Completed
 
 ## Room for Improvement
-- Create a website so that users can nteract with a UI.
+- Create a website so that users can interact with a UI.
 
 
 ## Acknowledgements
