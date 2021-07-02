@@ -28,18 +28,11 @@ const templateFactory = (str) => {
     let regV = /verb/;
     let regA = /adj/;
     for(let i = 0; i < str.length; i++){
-        //console.log(str[i]);
         let endPunct = '';
         if(str[i].match(regV)){
             if(str[i] != 'verb'){
                 let len = str[i].length;
                 endPunct = str[i].substring(len-1,len);
-                /*
-                console.log('--------------------');
-                console.log(`len-1 = ${len-1}`);
-                console.log(`len = ${len}`);
-                console.log('--------------------');
-                */
             }
             blankSpots.push(blankSpotFactory(i,'verb', endPunct));
         }
@@ -47,12 +40,6 @@ const templateFactory = (str) => {
             if(str[i] != 'adj'){
                 let len = str[i].length;
                 endPunct = str[i].substring(len-1,len);
-                /*
-                console.log('--------------------');
-                console.log(`len-1 = ${len-1}`);
-                console.log(`len = ${len}`);
-                console.log('--------------------');
-                */
             }
             blankSpots.push(blankSpotFactory(i,'adj', endPunct));
         }
@@ -105,13 +92,11 @@ const getFullQuote = () => {
         if(type === 'adj'){
             let randomAdj = fillIns.adj[Math.floor(Math.random() * fillIns.adj.length)].toLowerCase();
             randomAdj += template.blankSpots[i].endPunct;
-            //console.log(template.blankSpots[i].endPunct);
             template.wordArray[index] = randomAdj;
         }
         if(type === 'verb'){
             let randomVerb = fillIns.allVerbs[Math.floor(Math.random() * fillIns.allVerbs.length)].toLowerCase();
             randomVerb += template.blankSpots[i].endPunct;
-            //console.log(template.blankSpots[i].endPunct);
             template.wordArray[index] = randomVerb;
         }
     }
