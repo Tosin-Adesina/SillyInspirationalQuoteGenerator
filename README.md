@@ -13,8 +13,8 @@
 
 ## General Information
 - Intended to generate inspirational quotes and platitudes for one to live their life by.
-- These quotes may be incredibly deep and thoughtful or entirely meaningless and pretentious.
-- The purpose of this app is to generate quotes you can infinitely ponder the meaning of.
+- These quotes may be incredibly deep and thoughtful or entirely meaningless, nonsensical, and pretentious.
+- The purpose of this is to generate quotes you can infinitely ponder the meaning of.
 - I made this because I have too much time on my hands.
 
 ## Technologies Used
@@ -22,9 +22,6 @@
 - javascript - ECMAScript 2021
 - git - version 2.32.0
 
-
-## Features
-- TBA
 
 ## Setup
 - visual studio code - 1.57
@@ -36,15 +33,13 @@ From the terminal navigate to the folder you downloaded the app to and run the p
 ```javascript
 node main.js
 ```
+A nugget of advice straight from heavens will subsequently be printed to the command line
 ## Project Status
-in progress
+completed
 
 ## Room for Improvement
-Room for improvement
-- TBA
+- Create a website so that users can nteract with a UI.
 
-To do:
-- TBA
 
 ## Acknowledgements
 The list of the verbs used are from [here](https://www.citationmachine.net/resources/grammar-guides/verb/list-verbs/).
